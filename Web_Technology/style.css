@@ -1,0 +1,35 @@
+/* Styling span with class selector */
+.highlight {
+  background-color: #f4a261;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Styling time element */
+time {
+  font-style: italic;
+  color: #2a9d8f;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Styling image */
+img.image-class {
+  border: 3px solid #e76f51;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Styling anchor tags */
+a.link {
+  color: #264653;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.link:hover {
+  color: #e76f51;
+  text-decoration: underline;
+}
