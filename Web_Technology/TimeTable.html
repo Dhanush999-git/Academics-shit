@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fc;
+      margin: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+    th, td {
+      border: 2px solid #2c3e50;
+      text-align: center;
+      padding: 12px;
+      transition: background 0.3s ease;
+    }
+
+    th {
+      background-color: #34495e;
+      color: white;
+      font-size: 1rem;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f6fa;
+    }
+
+    td:hover {
+      background-color: #ffeaa7;
+      font-weight: bold;
+    }
+
+    tfoot {
+      background-color: #ddd;
+      font-weight: bold;
+    }
+
+    /* Highlighted cells */
+    .lab {
+      background-color: #ff9aa2;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .elective {
+      background-color: #b5e7a0;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .end {
+      background-color: #f1c40f;
+      color: #2c3e50;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    td {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Time Table</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>9:00-9:55</th>
+        <th>9:55-11:00</th>
+        <th>11:10-12:05</th>
+        <th>12:05-1:00</th>
+        <th>Lunch Break</th>
+        <th>1:55-2:50</th>
+        <th>2:50-3:45</th>
+        <th>3:45-4:40</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Mon</td>
+        <td>SE & Project</td>
+        <td>Computer Network</td>
+        <td colspan="2" class="lab">Mini Project</td>
+        <td> </td>
+        <td>Theory of Computation</td>
+        <td>AI</td>
+        <td>Research Methodology</td>
+      </tr>
+
+      <tr>
+        <td>Tue</td>
+        <td colspan="2" class="lab">Computer Network Lab</td>
+        <td>Theory of Computation</td>
+        <td>Research Methodology</td>
+        <td> </td>
+        <td>Computer Network</td>
+        <td>SE & Project</td>
+        <td>Counselling</td>
+      </tr>
+
+      <tr>
+        <td>Wed</td>
+        <td class="elective">Env. Studies</td>
+        <td>SE & Project</td>
+        <td>Research Methodology</td>
+        <td>Computer Network</td>
+        <td> </td>
+        <td>Theory of Computation</td>
+        <td>AI</td>
+        <td>Certification</td>
+      </tr>
+
+      <tr>
+        <td>Thu</td>
+        <td>Theory of Computation</td>
+        <td>AI</td>
+        <td colspan="2" class="lab">NSS/Yoga/Sports</td>
+        <td> </td>
+        <td>Mini Project</td>
+        <td>Research Methodology</td>
+        <td>Association</td>
+      </tr>
+
+      <tr>
+        <td>Fri</td>
+        <td>Research Methodology</td>
+        <td>Mini Project</td>
+        <td>SE & Project</td>
+        <td>Library</td>
+        <td> </td>
+        <td>Computer Network</td>
+        <td>Theory of Computation</td>
+        <td>Association</td>
+      </tr>
+
+      <tr>
+        <td>Sat</td>
+        <td>AI</td>
+        <td>SE & Project</td>
+        <td colspan="2" class="lab">Web Tech Lab</td>
+        <td> </td>
+        <td colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td colspan="9" class="end">End of Timetable</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
